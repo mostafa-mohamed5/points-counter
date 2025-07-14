@@ -1,0 +1,48 @@
+name: project_text
+description: "تطبيق Flutter جديد - مشروع تجريبي لعرض صورة."
+
+# يمنع نشر الحزمة إلى pub.dev
+publish_to: 'none' 
+
+# إصدار التطبيق
+version: 1.0.0+1
+
+# بيئة SDK المطلوبة
+environment:
+  sdk: ^3.8.1
+
+# الحزم المطلوبة لتشغيل التطبيق
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # أيقونات iOS على غرار Cupertino
+  cupertino_icons: ^1.0.8
+
+# حزم التطوير والاختبار
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# إعدادات خاصة بتطبيق Flutter
+flutter:
+
+  # استخدام خطوط وأيقونات الـMaterial Design
+    uses-material-design: true
+
+  # إضافة الأصول (assets) الخاصة بالتطبيق
+    assets:
+       - images/24.JPG
+       - images/selmy.JPG
+       - images/AWHR2253.JPEG
+    # يمكنك إضافة المجلد بالكامل إن كنت ستستخدم صوراً متعددة لاحقاً:
+    # - images/
+
+  # خطوط مخصصة (اختياري - مثال فقط)
+    fonts:
+     - family: Pacifico
+       fonts:
+         - asset: fonts/Pacifico-Regular.ttf
+         
+          
